@@ -1,0 +1,43 @@
+.toastWrapper {
+  @apply fixed bottom-5 left-1/2 -translate-x-1/2 z-50 space-y-3;
+}
+
+.toast {
+  @apply px-4 py-2 rounded-lg shadow-lg text-white transition-opacity duration-300 ease-in-out;
+}
+
+.toastVisible {
+  @apply opacity-100 translate-y-0;
+}
+
+.toastHidden {
+  @apply opacity-0 translate-y-2 pointer-events-none;
+}
+
+.success {
+  @apply bg-green-600;
+}
+
+.error {
+  @apply bg-red-600;
+}
+
+.info {
+  @apply bg-gray-800;
+}
+
+.toastContent {
+  @apply flex justify-between items-center gap-4 w-fit;
+
+  &__message {
+    @apply text-f-12;
+
+    @screen lg {
+        @apply text-f-14;
+    }
+  }
+}
+
+.closeButton {
+  @apply text-white hover:opacity-75;
+}

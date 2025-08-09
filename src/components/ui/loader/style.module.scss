@@ -1,0 +1,18 @@
+.loader {
+  @apply flex items-center justify-center h-auto;
+  &--fullscreen {
+    @apply min-h-screen h-full;
+  }
+  &--solid {
+    @apply bg-white;
+  }
+  &--transparent {
+    @apply absolute top-0 right-0 bottom-0 left-0 z-10 bg-transparent;
+  }
+  &--overlay {
+    @apply absolute top-0 right-0 bottom-0 left-0 z-10 bg-gray-500;
+  }
+  &__icon {
+    @apply animate-spin;
+  }
+}

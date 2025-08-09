@@ -1,0 +1,33 @@
+.button_base {
+  @apply inline-flex gap-2 items-center justify-center px-4 py-2 rounded-3xl font-medium transition-colors duration-200 font-poppins;
+}
+
+/* === Variant Styles === */
+.button_filled {
+  @apply bg-red-500 text-white active:bg-red-700;
+}
+
+.button_outlined {
+  @apply border border-red-500 text-red-500 bg-red-500 bg-transparent active:bg-gray-200;
+}
+
+.button_text {
+  @apply text-red-500  bg-red-500 bg-transparent p-0 active:text-red-700;
+}
+
+/* === Disabled State Overrides === */
+.button_disabled {
+  @apply cursor-not-allowed opacity-60;
+}
+
+.button_filled.button_disabled {
+  @apply bg-gray-400 text-white border-0;
+}
+
+.button_outlined.button_disabled {
+  @apply border-gray-400 text-gray-400;
+}
+
+.button_text.button_disabled {
+  @apply text-gray-600;
+}

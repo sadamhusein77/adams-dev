@@ -1,0 +1,23 @@
+.reload_card {
+    @apply py-3 px-4 w-full flex gap-3 items-center;
+
+    &__content {
+        @apply flex flex-col gap-1 flex-1;
+
+        &__title {
+            @apply text-f-12 font-semibold leading-4;
+        }
+
+        &__desc {
+            @apply text-f-10 font-normal leading-3;
+        }
+    }
+
+    &__action {
+        @apply text-f-12 leading-5 font-semibold text-white gap-2 px-4 h-8;
+
+        &__ico {
+            @apply w-4 h-4;
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.tooltipContainer {
+  @apply relative inline-block w-fit;
+}
+
+.tooltipContent {
+  @apply bg-black text-white text-sm px-3 py-1 rounded shadow-lg opacity-95;
+  position: fixed;
+  z-index: 9999;
+  pointer-events: none;
+  white-space: nowrap;
+  max-width: 200px;
+  overflow-wrap: break-word;
+
+  &::after {
+    content: "";
+    position: absolute;
+    border-style: solid;
+  }
+}
+
+/* Directional arrow logic — only visual, positioning is JS-based */
+.top::after {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px 6px 0 6px;
+  border-color: #111 transparent transparent transparent;
+}
+
+.bottom::after {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 6px 6px 6px;
+  border-color: transparent transparent #111 transparent;
+}
+
+.left::after {
+  top: 50%;
+  right: -6px;
+  transform: translateY(-50%);
+  border-width: 6px 0 6px 6px;
+  border-color: transparent transparent transparent #111;
+}
+
+.right::after {
+  top: 50%;
+  left: -6px;
+  transform: translateY(-50%);
+  border-width: 6px 6px 6px 0;
+  border-color: transparent #111 transparent transparent;
+}

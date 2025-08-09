@@ -1,0 +1,39 @@
+.navbar {
+  @apply w-full;
+}
+
+.navList {
+  @apply flex gap-6 px-4 h-14 items-center;
+
+  @screen lg {
+    @apply justify-end;
+  }
+}
+
+.navListVertical {
+    @apply flex-col;
+}
+
+.navItem {
+  @apply relative;
+}
+
+.navLink {
+    @screen lg {
+        @apply hover:text-gray-900;
+    }
+  @apply flex items-center gap-2 text-gray-600 transition-colors duration-200 font-medium;
+  @apply h-full relative;
+}
+
+.active {
+  @apply text-blue-600 font-semibold;
+}
+
+.indicator {
+  @apply absolute bottom-0 left-0 w-full h-0.5 bg-blue-600 scale-x-0 origin-center transition-transform duration-300;
+}
+
+.active .indicator {
+  @apply scale-x-100;
+}

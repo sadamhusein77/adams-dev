@@ -1,0 +1,19 @@
+{
+  "commons": {
+    "enter": "Masuk",
+    "send": "Kirim",
+    "contact": "Kontak",
+    "back": "Kembali",
+    "see-all": "Lihat Semua",
+    "remaining": "Sisa",
+    "usage": "Pemakaian",
+    "reload": "Muat Ulang",
+    "try-again": "Coba Kembali",
+    "copied": "Berhasil menyalin",
+    "error": {
+      "title": "Muat Ulang",
+      "subtitle": "Terjadi Kesalahan saat memuat konten"
+    },
+    "see-more": "Lihat lainnya"
+  }
+}

@@ -1,0 +1,102 @@
+@keyframes slideUpMobile {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideDownMobile {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+@keyframes fadeSlideUpDesktop {
+  from {
+    opacity: 0;
+    transform: translateY(100px); // come up from below
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes dropDownDesktop {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(100%); // drop far down
+  }
+}
+
+.dialog {
+  @apply w-full bg-white rounded-2xl rounded-b-none shadow-xl;
+
+  // Mobile open
+  animation: slideUpMobile 400ms cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+
+  // Desktop override — change from sm to lg
+  @screen lg {
+    animation: fadeSlideUpDesktop 400ms cubic-bezier(0.25, 0.8, 0.25, 1) forwards;
+    @apply w-fit rounded-b-2xl;
+  }
+}
+
+.dialog.exit {
+  // Mobile drawer close
+  animation: slideDownMobile 400ms ease forwards;
+
+  // Desktop modal close — change from sm to lg
+  @screen lg {
+    animation: dropDownDesktop 400ms cubic-bezier(0.4, 0, 0.2, 1) forwards;
+  }
+}
+
+.overlay {
+  @apply fixed inset-0 z-50 flex items-end justify-center bg-black/50;
+
+  @screen lg {
+    @apply items-center;
+  }
+}
+
+.header {
+  @apply flex justify-center p-4 relative;
+
+  @screen lg {
+    @apply justify-start p-6 pt-8;
+  }
+}
+
+.title {
+  @apply text-lg font-semibold;
+
+  @screen lg {
+    @apply text-f-24 leading-8 font-bold;
+  }
+}
+
+.closeButton {
+  @apply text-gray-500 hover:text-black text-4xl absolute left-5 top-1/2 transform -translate-y-1/2;
+
+  @screen lg {
+    @apply left-auto right-7;
+  }
+}
+
+.handle {
+  @apply w-12 h-1.5 bg-gray-300 rounded-full mx-auto mt-3 mb-1;
+}
+
+.body {
+  @apply max-h-[90dvh] overflow-y-auto;
+}

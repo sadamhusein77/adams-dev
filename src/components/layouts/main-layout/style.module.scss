@@ -1,0 +1,7 @@
+.wrapper {
+    @apply flex flex-col justify-normal items-center w-full h-[100dvh] relative;
+
+    &__body {
+        @apply h-full pt-16;
+    }
+}

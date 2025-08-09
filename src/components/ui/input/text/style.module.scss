@@ -1,0 +1,33 @@
+.input {
+  @apply flex flex-col gap-2 w-full;
+
+  &__field {
+    @apply relative;
+
+    input {
+      @apply px-5 py-[13px] text-xs border rounded-xl border-grey-40 bg-white focus:outline-none transition;
+    }
+
+    &__reset {
+      @apply absolute top-1/2 right-4 -translate-y-1/2;
+    }
+
+    &--invalid {
+      input {
+        @apply border-secondary-darkRed;
+      }
+    }
+  }
+
+  &__validation {
+    @apply leading-[10px];
+    
+    .validation__error {
+      @apply text-sm text-secondary-darkRed leading-[10px] text-[10px] font-medium -mt-1;   
+    }
+  }
+}
+
+.label {
+  @apply text-xs  text-grey-80;
+}

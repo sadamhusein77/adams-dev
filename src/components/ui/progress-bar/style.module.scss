@@ -1,0 +1,7 @@
+.wrapper {
+  @apply w-full bg-gray-200 rounded-full h-fit overflow-hidden;
+}
+
+.inner {
+  @apply h-full rounded-full transition-all duration-300;
+}

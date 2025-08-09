@@ -1,0 +1,52 @@
+.wrapper {
+  @apply fixed inset-0 pointer-events-none z-40;
+}
+
+.backdrop {
+  @apply fixed inset-0 bg-black/40 opacity-0 transition-opacity duration-200 pointer-events-none;
+}
+
+.backdropShow {
+  @apply opacity-100 pointer-events-auto;
+}
+
+.drawer {
+  @apply bg-white shadow-xl transition-transform duration-300 pointer-events-auto overflow-hidden;
+  transform: translate3d(0, 0, 0);
+}
+
+.left {
+  @apply left-0 top-0 h-full;
+  transform: translateX(-100%);
+}
+.right {
+  @apply right-0 top-0 h-full;
+  transform: translateX(100%);
+}
+.top {
+  @apply top-0 left-0 w-full;
+  transform: translateY(-100%);
+}
+.bottom {
+  @apply bottom-0 left-0 w-full;
+  transform: translateY(100%);
+}
+
+.open {
+  transform: translateX(0) translateY(0) !important;
+}
+
+.header {
+  @apply flex items-center justify-between p-3 border-b;
+  &__name {
+    @apply text-f-16 leading-6 font-semibold;
+  }
+}
+
+.closeBtn {
+  @apply text-2xl leading-none w-10 h-10 rounded-md flex items-center justify-center hover:bg-gray-100 active:scale-95;
+}
+
+.content {
+  @apply p-4 h-full overflow-auto;
+}
