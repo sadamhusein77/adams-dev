@@ -70,7 +70,7 @@
 }
 
 .header {
-  @apply flex justify-center p-4 relative;
+  @apply flex justify-center p-4 relative text-center pl-10;
 
   @screen lg {
     @apply justify-start p-6 pt-8;
@@ -86,7 +86,7 @@
 }
 
 .closeButton {
-  @apply text-gray-500 hover:text-black text-4xl absolute left-5 top-1/2 transform -translate-y-1/2;
+  @apply text-gray-500 hover:text-black text-4xl absolute left-5 top-1/2 transform -translate-y-[60%];
 
   @screen lg {
     @apply left-auto right-7;
