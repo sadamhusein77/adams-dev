@@ -1,0 +1,105 @@
+.container {
+  @apply relative;
+}
+
+/* Desktop */
+.desktopWrapper {
+  @apply hidden lg:block relative w-full max-w-6xl;
+}
+.arrowLeft {
+  @apply absolute left-0 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white shadow-md hover:bg-gray-100;
+}
+.arrowRight {
+  @apply absolute right-0 top-1/2 -translate-y-1/2 z-30 p-2 rounded-full bg-white shadow-md hover:bg-gray-100;
+}
+.arrowIcon {
+  @apply w-6 h-6 text-indigo-600;
+}
+.scrollContainer {
+  @apply relative w-full overflow-x-auto overflow-y-visible no-scrollbar;
+}
+.dragWrapper {
+  @apply relative flex space-x-32 px-24 py-10 cursor-grab active:cursor-grabbing min-w-max;
+}
+.pathLine {
+  @apply absolute top-1/2 left-0 w-full h-1 bg-gradient-to-r from-indigo-400 via-purple-400 to-pink-400 -translate-y-1/2 z-0;
+}
+.stepWrapper {
+  @apply flex flex-col items-center relative min-w-[220px];
+}
+.stepAbove {
+  @apply mb-28;
+}
+.stepBelow {
+  @apply mt-28;
+}
+.dashedLine {
+  @apply absolute left-1/2 -translate-x-1/2 border-l-2 border-dashed;
+}
+.lineAbove {
+  @apply top-full h-28 border-indigo-300;
+}
+.lineBelow {
+  @apply -top-28 h-28 border-pink-300;
+}
+.step {
+  @apply flex flex-col items-center cursor-pointer z-20;
+}
+.iconCircle {
+  @apply w-14 h-14 rounded-full bg-white border-4 border-indigo-400 flex items-center justify-center shadow-md group-hover:border-pink-400 transition;
+}
+.icon {
+  @apply w-6 h-6 text-indigo-500;
+}
+.stepTitle {
+  @apply mt-2 font-medium text-center;
+}
+
+/* Popup */
+.popup {
+  @apply fixed w-72 p-4 bg-white shadow-xl rounded-2xl border z-[9999];
+}
+.popupTitle {
+  @apply text-lg font-semibold;
+}
+.popupYear {
+  @apply text-sm text-gray-500;
+}
+.popupDesc {
+  @apply mt-2 text-sm text-gray-700;
+}
+
+/* Mobile */
+.mobileWrapper {
+  @apply lg:hidden relative w-full max-w-md;
+}
+.mobileLine {
+  @apply absolute left-6 top-0 bottom-0 w-1 bg-gradient-to-b from-indigo-400 via-purple-400 to-pink-400 z-0;
+}
+.mobileSteps {
+  @apply flex flex-col gap-12 relative z-10;
+}
+.mobileStep {
+  @apply flex items-start gap-4 cursor-pointer;
+}
+.iconCircleMobile {
+  @apply w-12 h-12 rounded-full bg-white border-4 border-indigo-400 flex items-center justify-center shadow-md;
+}
+.iconMobile {
+  @apply w-5 h-5 text-indigo-500;
+}
+.mobileTitle {
+  @apply font-semibold;
+}
+.mobileYear {
+  @apply text-sm text-gray-500;
+}
+.mobilePopup {
+  @apply mt-2 p-3 bg-white shadow-lg rounded-xl border;
+}
+.mobileInstitution {
+  @apply font-medium;
+}
+.mobileDesc {
+  @apply text-sm text-gray-600 mt-1;
+}
