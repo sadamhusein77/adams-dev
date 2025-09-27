@@ -1,0 +1,55 @@
+.feature_work {
+  @apply w-full p-6 bg-gradient-to-b from-white to-gray-50 rounded-2xl shadow-md flex flex-col gap-8;
+
+  &__heading {
+    @apply text-2xl font-bold tracking-tight text-gray-800;
+  }
+
+  &__grid {
+    @apply grid gap-6 md:grid-cols-2 lg:grid-cols-3;
+  }
+
+  &__card {
+    @apply rounded-xl overflow-hidden border border-gray-200 
+           shadow-sm bg-white transition-all duration-300 
+           hover:shadow-lg;
+  }
+
+  &__desc {
+    @apply flex flex-col gap-2 border-t border-gray-200 p-4 bg-gray-50 rounded-lg;
+
+    &__wrapper {
+      @apply flex justify-between items-center;
+    }
+
+    &__title {
+      @apply text-lg font-semibold text-gray-900;
+    }
+
+    &__duration {
+      @apply text-sm font-medium text-gray-500;
+    }
+
+    &__subtitle {
+      @apply text-sm text-gray-700 leading-relaxed;
+    }
+
+    &__tech {
+      @apply text-xs text-right font-medium text-indigo-600;
+    }
+  }
+
+  &__img {
+    @apply relative;
+
+    &__item {
+      @apply w-full h-44 object-cover rounded-t-xl transition-transform duration-500 ease-in-out;
+    }
+
+    &__btn {
+      @apply absolute top-2 right-2 bg-white/80 backdrop-blur-md 
+             rounded-full p-2 shadow-md hover:bg-white 
+             transition duration-200;
+    }
+  }
+}

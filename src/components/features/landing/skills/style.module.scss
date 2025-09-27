@@ -1,0 +1,22 @@
+.skills {
+    @apply px-4 py-8 bg-white flex flex-col gap-2 justify-center mb-4;
+
+    &__heading {
+        @apply text-f-24 font-semibold leading-6 mb-6;
+    }
+    &__all {
+        @apply mt-6;
+    }
+}
+
+.item {
+    @apply flex items-center gap-2 p-2 px-4 shadow-sm rounded-xl bg-slate-100;
+
+    &__img {
+        @apply w-9 h-9 max-w-9 max-h-9;
+    }
+
+    &__name {
+        @apply flex-1 font-semibold text-f-12 leading-4 text-slate-500;
+    }
+}
