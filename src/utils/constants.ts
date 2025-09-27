@@ -21,7 +21,10 @@ export const localStorageKey = {
   
 }
 
-export const QUERY_KEYS = { 
+export const QUERY_KEYS = {
+  landing: {
+    featureWork: 'landing-feature-work'
+  }
 }
 
 export const baseNameApp = 'Adams Dev'
