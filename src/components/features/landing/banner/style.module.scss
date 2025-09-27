@@ -1,0 +1,43 @@
+.banner {
+    @apply w-full p-4;
+
+    &__photo {
+        @apply relative flex flex-col gap-2 justify-center items-center w-full h-full;
+
+        &__wrapper {
+            @apply max-w-32 max-h-32 overflow-hidden z-10 h-full w-full rounded-full;
+
+            &__img {
+                @apply w-32 h-auto z-10;
+            }
+        }       
+
+        &__bg {
+            @apply z-0 w-52 h-auto absolute -top-2 left-1/2 transform -translate-x-1/2;
+        }
+    }
+
+    &__info {
+        @apply flex flex-col items-center text-center z-10 relative mt-4;
+        &__name {
+            @apply text-f-16 font-semibold leading-6 w-fit rounded-xl bg-[#0369a1] text-white #{!important};
+        }
+        &__job {
+            @apply text-f-14 font-semibold leading-5 text-gray-600;
+        }
+    }
+
+    &__greeting {
+        @apply flex flex-col gap-2 items-center mt-2 text-center;
+
+        &__title {
+            @apply text-f-16 font-semibold leading-5;
+        }
+        &__desc {
+            @apply text-f-14 font-semibold leading-4 text-gray-500;
+        }
+        &__cta {
+            @apply mt-2 bg-[#0369a1] rounded-2xl flex gap-1 text-f-16 text-white font-normal leading-6 active:bg-cyan-800 #{!important};
+        }
+    }
+}
