@@ -1,7 +1,7 @@
 .wrapper {
-    @apply flex flex-col justify-normal items-center w-full h-[100dvh] relative;
+  @apply flex flex-col min-h-[100dvh] w-full; // fill full height
 
-    &__body {
-        @apply h-full pt-16;
-    }
+  &__body {
+    @apply flex-1 pt-16 w-full; // flex-1 makes body grow & push footer down
+  }
 }
