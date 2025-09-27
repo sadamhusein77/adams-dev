@@ -1,0 +1,12 @@
+.wrapper {
+  @apply relative max-w-5xl mx-auto;
+}
+
+.line {
+  @apply absolute left-6 md:left-1/2 top-0 bottom-0 w-1 bg-gray-200 md:-translate-x-1/2;
+}
+
+.list {
+  @apply space-y-12;
+}
+

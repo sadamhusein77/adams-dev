@@ -1,0 +1,51 @@
+.timelineItem {
+  @apply relative grid grid-cols-1 md:grid-cols-2 items-start;
+}
+
+.timelineLeft {
+  @apply md:col-span-1 md:pr-12 md:text-right;
+}
+
+.timelineRight {
+  @apply md:col-span-1;
+}
+
+.motionBlock {
+  @apply hidden md:block px-4 md:px-0;
+}
+
+.mobileBlock {
+  @apply md:hidden pl-16;
+}
+
+.card {
+  @apply inline-block md:max-w-[420px];
+}
+
+.title {
+  @apply text-lg font-semibold;
+}
+
+.subtitle {
+  @apply text-sm text-gray-500;
+}
+
+.description {
+  @apply mt-2 text-gray-700 text-sm;
+}
+
+.iconWrapper {
+  @apply absolute -left-1 md:left-1/2 top-0 md:top-1/2 -translate-y-0 md:-translate-y-1/2 md:-translate-x-1/2 z-10;
+}
+
+.iconCircle {
+  @apply flex items-center justify-center w-14 h-14 rounded-full border-4 border-gray-200 shadow-lg bg-white;
+}
+
+.iconInner {
+  @apply flex items-center justify-center w-10 h-10 rounded-full text-white;
+}
+
+.icon {
+  @apply w-5 h-5;
+}
