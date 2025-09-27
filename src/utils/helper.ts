@@ -59,3 +59,8 @@ export function getLangDevice(): string {
   return langId;
 }
 
+export function numericId() {
+  const ts = Date.now();
+  const rand = Math.floor(Math.random() * 1024);
+  return (ts * 1024) + rand;
+}
