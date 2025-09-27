@@ -4,12 +4,9 @@
     "send": "Send",
     "contact": "Contact",
     "back": "Back",
-    "call188": "Call 188",
-    "call188-long": "Please call 188 for more information",
     "see-all": "See All",
     "remaining": "Remaining",
     "usage": "Usage",
-    "ssl-action": "Proceed to Backend Server",
     "reload": "Reload",
     "try-again": "Try Again",
     "copied": "Copied successfully",
@@ -17,119 +14,6 @@
       "title": "Reload",
       "subtitle": "An error occurred while loading the content"
     },
-    "see-more": "See more",
-    "internet-quota": "Internet Quota"
-  },
-  "verification": {
-    "title": "IndiHome Service Verification",
-    "sub-title": "Manage IndiHome service usage easily",
-    "form": {
-      "ih-number": {
-        "label": "Enter IndiHome Account",
-        "placeholder": "Enter IndiHome number",
-        "validations": {
-          "min": "Masukkan 12 digit nomor IndiHome Anda dengan benar.",
-          "pattern": "Nomor IndiHome tidak valid",
-          "not-found": "Number you entered is not found",
-          "too-many": "OTP request limit exceeded, please try again in {{second}} seconds"
-        }
-      }
-    }
-  },
-  "otp": {
-    "title": "OTP Verification",
-    "receiver": "OTP has been sent to the number",
-    "not-received": "Didn't receive the code?",
-    "can-resend-in": "You can resend the code in ",
-    "resend-otp": "Resend OTP code",
-    "other-method": "Send OTP using another method",
-    "have-problem": "Having Trouble",
-    "report": "You can report the issue you’re experiencing to us.",
-    "number-not-connect-indihome": "There is no mobile number connected to your IndiHome account",
-    "max-time-submit": "You have exceeded the maximum verification limit. Repeat the process in ",
-    "not-found-reference": "OTP Reference not found",
-    "data-updated": "Data updated "
-  },
-  "otp-options": {
-    "choose-method": "Choose Verification Method",
-    "success": {
-      "otp-sent": "OTP successfully sent to {{method}} - {{recipient}}"
-    },
-    "errors": {
-      "too-many-request": "OTP request exceeded, please try again later",
-      "too-many-request-timer": "OTP request exceeded, please wait",
-      "not-found": "IndiHome number you entered is not found",
-      "unknown": "Something went wrong please try again later"
-    }
-  },
-  "dashboard": {
-    "active-package": "Active Package",
-    "add-on": "Additional Service",
-    "active-package-content": {
-      "quota-orbit": "Orbit Internet Quota",
-      "family-quota": "Family Quota",
-      "digital-lifestyle": "Digital Lifestyle",
-      "minipack-channel-tv": "TV Channel Minipack",
-      "tell-to-all": "Phone Calls to All Operators",
-      "tell-to-member": "Phone Calls to Fellow Members",
-      "sms-to-all": "SMS to All Operators",
-      "sms-to-member": "SMS to Fellow Members"
-    },
-    "active-package-internet": [
-      "The displayed quota is the total active quota (from the main package / top-up add-on).",
-      "If the quota's validity period expires, the displayed quota will be 0.",
-      "If the customer tops up multiple times, the displayed quota and validity period follow the most recent top-up.",
-      "Each top-up is valid for 30 days."
-    ]
-  },
-  "add-on": {
-    "title": "Add On Service",
-    "see-all": "See All",
-    "tabs": {
-      "all": "All",
-      "subscription": "Subscription",
-      "one_time_purchase": "One Time Purchase"
-    },
-    "detail": {
-      "subscription": "Subscription"
-    }
-  },
-  "global-error": {
-    "500": {
-      "title": "Session Expired",
-      "desc": "Please try this process again"
-    },
-    "404": {
-      "title": "Page Not Found",
-      "desc": "Make sure you’ve entered the correct URL. If the issue persists, please contact 188 for assistance."
-    },
-    "403": {
-      "title": "Access Denied",
-      "desc": "Sorry, you do not have permission to access this site."
-    },
-    "400": {
-      "title": "Invalid Request",
-      "desc": "Sorry, the server could not process the request because it was invalid. There is an issue with how you sent the request."
-    },
-    "429": {
-      "title": "Request Limit Exceeded",
-      "desc": "Sorry, the application has exceeded the number of requests allowed within a certain period."
-    },
-    "401": {
-      "title": "Session Expired",
-      "desc": "Reload to continue the session"
-    },
-    "408": {
-      "title": "Request Timeout",
-      "desc": "Sorry, your request has exceeded the time limit, so the server terminated the connection."
-    },
-    "409": {
-      "title": "You Have an Unfinished Order",
-      "desc": "Sorry, a new order cannot be placed yet. Please try again once the previous request process has completed successfully."
-    },
-    "SSL": {
-      "title": "Unsecure Connection Detected",
-      "desc": "This application requires access to a server that does not yet have a security certificate"
-    }
+    "see-more": "See more"
   }
 }
