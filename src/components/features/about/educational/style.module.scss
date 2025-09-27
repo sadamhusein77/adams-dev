@@ -1,0 +1,6 @@
+.container {
+  @apply flex flex-col items-center w-full py-12 px-4;
+}
+.heading {
+  @apply text-2xl font-semibold mb-10 text-center;
+}
