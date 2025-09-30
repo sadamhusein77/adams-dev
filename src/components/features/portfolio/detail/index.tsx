@@ -44,7 +44,7 @@ export default function PortfolioDetail({
       onClose={handleClose}
       title={selected.title || ''}
     >
-      <div className="p-4 md:p-6 max-h-[80dvh] min-w-[750px] max-w-[750px] overflow-y-auto">
+      <div className="p-4 md:p-6 max-h-[80dvh] lg:min-w-[750px] max-w-[750px] overflow-y-auto">
         <div className="flex items-start justify-between gap-4">
           <div>
             <p className="text-sm text-gray-500 mt-1">
