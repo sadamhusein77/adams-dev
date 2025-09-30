@@ -4,8 +4,11 @@ import { Marquee } from "@/components/ui/marquee";
 
 import style from './style.module.scss';
 import SmartImage from "@/components/ui/smart-image";
+import useMediaQuery from "@/hooks/use-mediaQuery";
 
 const AllSkills = () => {
+  const { lg } = useMediaQuery();
+
   const allSkillsData = [
     { name: "CSS", icon: icoCss},
     { name: "Docker", icon: icoDocker},
@@ -41,6 +44,8 @@ const AllSkills = () => {
         duration={18}
         pauseOnHover
         gradientFade
+        direction={lg ? 'vertical' : 'horizontal'}
+        className={lg ? 'h-full max-h-[375px]' : ''}
       />
   )
 }
@@ -56,13 +61,19 @@ export default function MySkills() {
   ];
 
   return (
-    <div className={style.skills}>
-      <p className={style.skills__heading}>My Expertise</p>
-      {skills.map((s, i) => (
-        <SkillCard key={i} {...s} />
-      ))}
-      <div className={style.skills__all}>
-        <AllSkills />
+    <div className={style.wrapper}>
+      <div className={style.skills}>
+        <div className={style.skills__content}>
+          <div className={style.skills__content__card}>
+            <p className={style.skills__heading}>My Expertise</p>
+            {skills.map((s, i) => (
+              <SkillCard key={i} {...s} />
+            ))}
+          </div>
+          <div className={style.skills__content__all}>
+            <AllSkills />
+          </div>
+        </div>
       </div>
     </div>
   );

@@ -1,11 +1,41 @@
+.wrapper {
+    @apply flex justify-center w-full p-1 my-6;
+}
+
 .skills {
-    @apply px-4 py-8 bg-white flex flex-col gap-2 justify-center mb-4;
+    @apply px-4 py-8 bg-white flex flex-col gap-2 justify-center mb-4 w-full rounded-3xl;
+
+    @screen lg {
+        @apply max-w-3xl py-0;
+    }
 
     &__heading {
-        @apply text-f-24 font-semibold leading-6 mb-6;
+        @apply text-f-24 font-semibold leading-6;
+        @screen lg {
+            @apply my-6;
+        }
     }
-    &__all {
-        @apply mt-6;
+    &__content {
+        @apply flex flex-col gap-2;
+
+        @screen lg {
+            @apply flex flex-row;
+        }
+
+        &__card {
+            @apply flex flex-col gap-2 flex-1;
+
+            @screen lg {
+                @apply mb-6;
+            }
+        }
+        &__all {
+            @apply mt-6;
+
+            @screen lg {
+                @apply mt-0;
+            }
+        }
     }
 }
 
