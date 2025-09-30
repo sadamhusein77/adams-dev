@@ -1,5 +1,5 @@
 .feature_work {
-  @apply w-full p-6 bg-gradient-to-b from-white to-gray-50 rounded-2xl shadow-md flex flex-col gap-8;
+  @apply w-full px-6 rounded-2xl flex flex-col gap-8;
 
   &__heading {
     @apply text-2xl font-bold tracking-tight text-gray-800;
