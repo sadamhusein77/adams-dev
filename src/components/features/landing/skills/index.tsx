@@ -33,7 +33,7 @@ const AllSkills = () => {
             key={i}
             src={t.icon}
             alt={`Image ${i}`}
-            className={style.item__img}
+            wrapperClassName={style.item__img}
           />
           <p className={style.item__name}>{t.name}</p>
         </div>
