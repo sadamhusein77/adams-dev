@@ -10,6 +10,9 @@ export default function MainLayout() {
       <div className={style.wrapper__body}>
         <Outlet />
       </div>
+      <footer className="max-w-6xl mx-auto my-12 text-center text-sm text-gray-500">
+        Made with ❤️
+      </footer>
       <Footer />
     </div>
   );
