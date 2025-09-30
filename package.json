@@ -5,7 +5,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "rsbuild build",
+    "build": "rsbuild build && cp dist/index.html dist/404.html",
     "dev": "rsbuild dev --open",
     "format": "prettier --write .",
     "lint": "eslint .",
