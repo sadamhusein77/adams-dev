@@ -3,6 +3,7 @@ import style from './style.module.scss';
 import Chip from '@/components/ui/chip';
 import Button from '@/components/ui/button';
 import { ArrowRightIcon } from '@/assets/svgs/ico_chevron-right';
+import { useNavigate } from 'react-router';
 
 const ProfilePhoto = () => {
   return (
@@ -20,11 +21,12 @@ const ProfilePhoto = () => {
 };
 
 const GreetingCard = () => {
+  const navigate = useNavigate();
   return (
     <div className={style.banner__greeting}>
       <h4 className={style.banner__greeting__title}>Greetings!</h4>
       <p className={style.banner__greeting__desc}>I'm a dedicated Front-End Developer with over 4 years of hands-on experience crafting dynamic and responsive user interfaces. My expertise lies in the <span className='text-black'>React.js</span> ecosystem, where I specialize in building <span className='text-black'>efficient</span>, <span className='text-black'>scalable</span>, and visually appealing web applications. I am passionate about creating seamless user experiences and translating complex designs into <span className='text-black'>clean, maintainable code</span>.</p>
-      <Button className={style.banner__greeting__cta}>
+      <Button className={style.banner__greeting__cta} onClick={() => navigate('/project')}>
         <span>Explore Projects</span>
         <ArrowRightIcon color="white" />  
       </Button>
