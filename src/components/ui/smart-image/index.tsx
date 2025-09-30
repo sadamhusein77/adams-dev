@@ -1,65 +1,109 @@
-import { useState, useRef, useEffect } from "react";
+import { useState, useRef, useEffect, memo } from "react";
 import { icoBrokenImg } from "@/assets";
 import { cn } from "@/libs/utils";
 
 type SmartImageProps = React.ImgHTMLAttributes<HTMLImageElement> & {
   errorClassName?: string;
+  fallbackSrc?: string;
+  showPlaceholder?: boolean;
+  wrapperClassName?: string;
+  imgClassName?: string;
 };
 
-export default function SmartImage({
+// --- Shared observer setup ---
+type ObserverCallback = (el: Element) => void;
+
+let observer: IntersectionObserver | null = null;
+const listeners = new WeakMap<Element, ObserverCallback>();
+
+function getObserver(): IntersectionObserver {
+  if (observer) return observer;
+
+  observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const cb = listeners.get(entry.target);
+          if (cb) cb(entry.target);
+          observer?.unobserve(entry.target);
+          listeners.delete(entry.target);
+        }
+      });
+    },
+    { rootMargin: "100px" }
+  );
+
+  return observer;
+}
+
+// --- Component ---
+const SmartImage = memo(function SmartImage({
   src,
   alt,
-  className,
+  className, // kept for backward-compat (alias for wrapper)
+  wrapperClassName,
+  imgClassName,
   errorClassName,
+  fallbackSrc = icoBrokenImg,
+  showPlaceholder = true,
   ...props
 }: SmartImageProps) {
-  const [status, setStatus] = useState<"idle" | "loading" | "loaded" | "error">(
-    "idle"
-  );
+  const [status, setStatus] = useState<
+    "idle" | "loading" | "loaded" | "error"
+  >("idle");
   const [isInView, setIsInView] = useState(false);
-
   const wrapperRef = useRef<HTMLDivElement | null>(null);
 
-  // Observe wrapper, not img
   useEffect(() => {
     if (!wrapperRef.current) return;
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          if (entry.isIntersecting) {
-            setIsInView(true);
-            setStatus("loading");
-            observer.disconnect();
-          }
-        });
-      },
-      { rootMargin: "100px" }
-    );
+    const current = wrapperRef.current;
+    const obs = getObserver();
 
-    observer.observe(wrapperRef.current);
-    return () => observer.disconnect();
-  }, []);
+    listeners.set(current, () => {
+      setIsInView(true);
+      if (src) setStatus("loading");
+      else setStatus("error");
+    });
+
+    obs.observe(current);
+
+    return () => {
+      listeners.delete(current);
+      obs.unobserve(current);
+    };
+  }, [src]);
+
+  const finalSrc = !src || status === "error" ? fallbackSrc : src;
 
   return (
     <div
       ref={wrapperRef}
-      className={cn("relative inline-block", className)}
+      className={cn("relative inline-block", wrapperClassName, className)}
     >
       {isInView && (
-        <img
-          src={status === "error" ? icoBrokenImg : src}
-          alt={alt}
-          onLoad={() => setStatus("loaded")}
-          onError={() => setStatus("error")}
-          className={cn(
-            "transition-opacity duration-500 w-full h-full object-contain",
-            status === "loaded" ? "opacity-100" : "opacity-0",
-            status === "error" && errorClassName
+        <>
+          {status === "loading" && showPlaceholder && (
+            <div className="absolute inset-0 animate-pulse bg-gray-200 rounded" />
           )}
-          {...props}
-        />
+          <img
+            src={finalSrc}
+            alt={alt}
+            loading="lazy"
+            onLoad={() => setStatus("loaded")}
+            onError={() => setStatus("error")}
+            className={cn(
+              "transition-opacity duration-500 w-full h-full object-contain",
+              status === "loaded" ? "opacity-100" : "opacity-0",
+              status === "error" && errorClassName,
+              imgClassName // 👈 apply here
+            )}
+            {...props}
+          />
+        </>
       )}
     </div>
   );
-}
+});
+
+export default SmartImage;
