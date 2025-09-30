@@ -1,4 +1,5 @@
 {
+  "homepage": "https://sadamhusein77.github.io/adams-dev/",
   "name": "adams-dev-personal",
   "version": "1.0.0",
   "private": true,
@@ -8,7 +9,9 @@
     "dev": "rsbuild dev --open",
     "format": "prettier --write .",
     "lint": "eslint .",
-    "preview": "rsbuild preview"
+    "preview": "rsbuild preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tanstack/react-query": "^5.80.7",
@@ -46,6 +49,7 @@
     "@types/react-dom": "^18.3.5",
     "autoprefixer": "^10.4.21",
     "babel-jest": "^30.0.0",
+    "gh-pages": "^6.3.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
