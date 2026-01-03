@@ -1,4 +1,4 @@
-import { imgLuxspace, imgNotes } from "@/assets";
+import { imgLiburi, imgLuxspace, imgNotes } from "@/assets";
 import type { ProjectDomain } from "@/core/entities/domains/project.domain";
 import type { BaseResponse } from "@/core/utils/base-response";
 import { numericId } from "@/utils/helper";
@@ -26,6 +26,15 @@ export const mockRespProject: BaseResponse<ProjectDomain[]> = {
             thumbnail: imgNotes,
             techStack: "React JS, Tailwindcss",
             url: "https://my-keep-notes.netlify.app/"
+        },
+        {
+            id: `pr-${numericId()}`,
+            name: "Liburi",
+            duration: "Several Days",
+            description: "Example Booking Vacation",
+            thumbnail: imgLiburi,
+            techStack: "React JS, Tailwindcss",
+            url: "https://liburi.vercel.app/"
         },
     ]
 }

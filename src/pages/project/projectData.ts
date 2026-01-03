@@ -1,4 +1,4 @@
-import { imgLuxspace, imgNotes } from "@/assets";
+import { imgLiburi, imgLuxspace, imgNotes } from "@/assets";
 import type { IProject } from ".";
 
 export const SAMPLE_PROJECTS: IProject[] = [
@@ -21,6 +21,16 @@ export const SAMPLE_PROJECTS: IProject[] = [
     year: 2022,
     image: imgNotes,
     url: "https://my-keep-notes.netlify.app/",
+  },
+  {
+    id: 5,
+    title: "Liburi",
+    description:
+      "Booking Vacation Web Application",
+    tags: ["React", "Tailwindcss", "TypeScript"],
+    year: 2025,
+    image: imgLiburi,
+    url: "https://liburi.vercel.app/",
   },
   {
     id: 3,

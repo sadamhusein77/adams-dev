@@ -44,6 +44,7 @@ import imgCert12 from '@/assets/images/img_cert_12.webp';
 import imgCert13 from '@/assets/images/img_cert_13.webp';
 import imgCert14 from '@/assets/images/img_cert_14.webp';
 import imgCert15 from '@/assets/images/img_cert_15.webp';
+import imgLiburi from '@/assets/images/img_liburi.png';
 
 export {
     IconWeb,
@@ -91,5 +92,6 @@ export {
     imgCert12,
     imgCert13,
     imgCert14,
-    imgCert15
+    imgCert15,
+    imgLiburi
 }
