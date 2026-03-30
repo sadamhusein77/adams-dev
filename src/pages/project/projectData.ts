@@ -33,6 +33,16 @@ export const SAMPLE_PROJECTS: IProject[] = [
     url: "https://liburi.vercel.app/",
   },
   {
+    id: 6,
+    title: "Irello",
+    description:
+      "AI-powered task management and productivity application",
+    tags: ["React", "Vite", "Tailwindcss", "TypeScript", "AI"],
+    year: 2026,
+    image: "https://minimax-algeng-chat-tts-us.oss-us-east-1.aliyuncs.com/ccv2%2F2026-03-30%2FMiniMax-M2.7%2F2027207676231954527%2F51884f2291240a9f0d449492ec42710f724bd00e4270f6a8e133927816446dc0..png?Expires=1774968194&OSSAccessKeyId=LTAI5tCpJNKCf5EkQHSuL9xg&Signature=4n94wuGyjMUBnYs%2FUq6eKnmLUOQ%3D",
+    url: "https://irello.vercel.app/",
+  },
+  {
     id: 3,
     title: "Interactive Data Explorer",
     description:
