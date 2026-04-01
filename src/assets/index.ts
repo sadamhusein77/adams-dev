@@ -29,6 +29,8 @@ import imgWave from '@/assets/images/img_wave-bg.svg';
 import imgSadamPhoto from '@/assets/images/img_sadam-foto.webp';
 import imgLuxspace from '@/assets/images/img_luxspace.webp';
 import imgNotes from '@/assets/images/img_notes.webp';
+import imgIrello from '@/assets/images/img_irello.png';
+import imgWallyboard from '@/assets/images/img_wallyboard.png';
 import imgCert1 from '@/assets/images/img_cert_1.webp';
 import imgCert2 from '@/assets/images/img_cert_2.webp';
 import imgCert3 from '@/assets/images/img_cert_3.webp';
@@ -93,5 +95,7 @@ export {
     imgCert13,
     imgCert14,
     imgCert15,
-    imgLiburi
+    imgLiburi,
+    imgIrello,
+    imgWallyboard
 }
