@@ -31,6 +31,7 @@ import imgLuxspace from '@/assets/images/img_luxspace.webp';
 import imgNotes from '@/assets/images/img_notes.webp';
 import imgIrello from '@/assets/images/img_irello.png';
 import imgWallyboard from '@/assets/images/img_wallyboard.png';
+import imgFloflow from '@/assets/images/img_floflow.png';
 import imgCert1 from '@/assets/images/img_cert_1.webp';
 import imgCert2 from '@/assets/images/img_cert_2.webp';
 import imgCert3 from '@/assets/images/img_cert_3.webp';
@@ -97,5 +98,6 @@ export {
     imgCert15,
     imgLiburi,
     imgIrello,
-    imgWallyboard
+    imgWallyboard,
+    imgFloflow
 }

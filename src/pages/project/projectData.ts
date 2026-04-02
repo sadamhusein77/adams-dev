@@ -1,4 +1,4 @@
-import { imgIrello, imgLiburi, imgLuxspace, imgNotes, imgWallyboard } from "@/assets";
+import { imgFloflow, imgIrello, imgLiburi, imgLuxspace, imgNotes, imgWallyboard } from "@/assets";
 import type { IProject } from ".";
 
 export const SAMPLE_PROJECTS: IProject[] = [
@@ -37,7 +37,7 @@ export const SAMPLE_PROJECTS: IProject[] = [
     title: "Irello",
     description:
       "AI-powered task management and productivity application",
-    tags: ["React", "Vite", "Tailwindcss", "TypeScript", "AI"],
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript"],
     year: 2026,
     image: imgIrello,
     url: "https://irello.vercel.app/",
@@ -47,9 +47,19 @@ export const SAMPLE_PROJECTS: IProject[] = [
     title: "Wallyboard",
     description:
       "AI-powered white board",
-    tags: ["React", "Vite", "Tailwindcss", "TypeScript", "AI"],
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript"],
     year: 2026,
     image: imgWallyboard,
     url: "https://wally-board.vercel.app/",
+  },
+  {
+    id: 6,
+    title: "FloFlow",
+    description:
+      "AI-powered simple cashflow management and report",
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript"],
+    year: 2026,
+    image: imgFloflow,
+    url: "https://floflow.vercel.app/",
   }
 ];
