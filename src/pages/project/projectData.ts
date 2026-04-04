@@ -1,4 +1,4 @@
-import { imgFloflow, imgIrello, imgLiburi, imgLuxspace, imgNotes, imgWallyboard } from "@/assets";
+import { imgFloflow, imgGGameHub, imgIrello, imgLiburi, imgLuxspace, imgNotes, imgWallyboard } from "@/assets";
 import type { IProject } from ".";
 
 export const SAMPLE_PROJECTS: IProject[] = [
@@ -61,5 +61,15 @@ export const SAMPLE_PROJECTS: IProject[] = [
     year: 2026,
     image: imgFloflow,
     url: "https://floflow.vercel.app/",
+  },
+  {
+    id: 7,
+    title: "G-Game Hub",
+    description:
+      "AI-powered simple mini game",
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript"],
+    year: 2026,
+    image: imgGGameHub,
+    url: "https://ggamehub.vercel.app/",
   }
 ];
