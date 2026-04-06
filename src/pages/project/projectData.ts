@@ -1,4 +1,4 @@
-import { imgFloflow, imgGGameHub, imgIrello, imgLiburi, imgLuxspace, imgNotes, imgWallyboard } from "@/assets";
+import { imgFloflow, imgGGameHub, imgIrello, imgLiburi, imgLuxspace, imgNotes, imgOneByOne, imgWallyboard } from "@/assets";
 import type { IProject } from ".";
 
 export const SAMPLE_PROJECTS: IProject[] = [
@@ -71,5 +71,15 @@ export const SAMPLE_PROJECTS: IProject[] = [
     year: 2026,
     image: imgGGameHub,
     url: "https://ggamehub.vercel.app/",
+  },
+  {
+    id: 8,
+    title: "One by One Battle Combat",
+    description:
+      "AI-powered simple battle combat with inventory and crafting feature",
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript"],
+    year: 2026,
+    image: imgOneByOne,
+    url: "https://onebyone-gilt.vercel.app/",
   }
 ];

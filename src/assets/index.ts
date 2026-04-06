@@ -33,6 +33,7 @@ import imgIrello from '@/assets/images/img_irello.png';
 import imgWallyboard from '@/assets/images/img_wallyboard.png';
 import imgFloflow from '@/assets/images/img_floflow.png';
 import imgGGameHub from '@/assets/images/img_ggamehub.png';
+import imgOneByOne from '@/assets/images/img_onebyone.png';
 import imgCert1 from '@/assets/images/img_cert_1.webp';
 import imgCert2 from '@/assets/images/img_cert_2.webp';
 import imgCert3 from '@/assets/images/img_cert_3.webp';
@@ -101,5 +102,6 @@ export {
     imgIrello,
     imgWallyboard,
     imgFloflow,
-    imgGGameHub
+    imgGGameHub,
+    imgOneByOne
 }
