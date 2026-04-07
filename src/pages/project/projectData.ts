@@ -1,4 +1,4 @@
-import { imgFloflow, imgGGameHub, imgIrello, imgLiburi, imgLuxspace, imgNotes, imgOneByOne, imgWallyboard } from "@/assets";
+import { imgFloflow, imgGGameHub, imgIPoker, imgIrello, imgLiburi, imgLuxspace, imgNotes, imgOneByOne, imgWallyboard } from "@/assets";
 import type { IProject } from ".";
 
 export const SAMPLE_PROJECTS: IProject[] = [
@@ -81,5 +81,15 @@ export const SAMPLE_PROJECTS: IProject[] = [
     year: 2026,
     image: imgOneByOne,
     url: "https://onebyone-gilt.vercel.app/",
+  },
+  {
+    id: 9,
+    title: "iPoker Remi 13",
+    description:
+      "AI-powered simple remi 13",
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript"],
+    year: 2026,
+    image: imgIPoker,
+    url: "https://remi-cards13.vercel.app/",
   }
 ];
