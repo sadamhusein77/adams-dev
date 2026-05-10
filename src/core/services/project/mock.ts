@@ -1,4 +1,4 @@
-import { imgLiburi, imgLuxspace, imgNotes } from "@/assets";
+import { imgIrello, imgLiburi, imgLuxspace, imgNotes, imgWallyboard } from "@/assets";
 import type { ProjectDomain } from "@/core/entities/domains/project.domain";
 import type { BaseResponse } from "@/core/utils/base-response";
 import { numericId } from "@/utils/helper";
@@ -11,21 +11,21 @@ export const mockRespProject: BaseResponse<ProjectDomain[]> = {
     data: [
         {
             id: `pr-${numericId()}`,
-            name: "Luxspace",
+            name: "Irello",
             duration: "Several Days",
-            description: "Prototype of sample web e-commerce",
-            thumbnail: imgLuxspace,
+            description: "AI-powered task management and productivity application",
+            thumbnail: imgIrello,
             techStack: "React JS, Tailwindcss",
-            url: "https://luxtspace-rfd.netlify.app/"
+            url: "https://irello.vercel.app/"
         },
         {
             id: `pr-${numericId()}`,
-            name: "My Keep Notes",
+            name: "Wallyboard",
             duration: "Several Days",
-            description: "Example notes with temporary storage",
-            thumbnail: imgNotes,
+            description: "AI-powered white board",
+            thumbnail: imgWallyboard,
             techStack: "React JS, Tailwindcss",
-            url: "https://my-keep-notes.netlify.app/"
+            url: "https://wally-board.vercel.app/"
         },
         {
             id: `pr-${numericId()}`,
