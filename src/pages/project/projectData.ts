@@ -1,4 +1,4 @@
-import { imgFloflow, imgGGameHub, imgIPoker, imgIrello, imgLiburi, imgLuxspace, imgNotes, imgOneByOne, imgWallyboard } from "@/assets";
+import { imgFloflow, imgGGameHub, imgIPoker, imgIrello, imgLapakin, imgLiburi, imgLuxspace, imgNotes, imgOneByOne, imgWallyboard } from "@/assets";
 import type { IProject } from ".";
 
 export const SAMPLE_PROJECTS: IProject[] = [
@@ -91,5 +91,15 @@ export const SAMPLE_PROJECTS: IProject[] = [
     year: 2026,
     image: imgIPoker,
     url: "https://remi-cards13.vercel.app/",
+  },
+  {
+    id: 10,
+    title: "Lapakin",
+    description:
+      "AI-powered vendor street location",
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript", "leaflet"],
+    year: 2026,
+    image: imgLapakin,
+    url: "https://lapakin.vercel.app/",
   }
 ];

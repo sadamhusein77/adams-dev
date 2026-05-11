@@ -1,4 +1,4 @@
-import { imgIrello, imgLiburi, imgLuxspace, imgNotes, imgWallyboard } from "@/assets";
+import { imgIrello, imgLapakin, imgLiburi, imgWallyboard } from "@/assets";
 import type { ProjectDomain } from "@/core/entities/domains/project.domain";
 import type { BaseResponse } from "@/core/utils/base-response";
 import { numericId } from "@/utils/helper";
@@ -36,5 +36,14 @@ export const mockRespProject: BaseResponse<ProjectDomain[]> = {
             techStack: "React JS, Tailwindcss",
             url: "https://liburi.vercel.app/"
         },
+        {
+            id: `pr-${numericId()}`,
+            name: "Lapakin",
+            duration: "Several Days",
+            description: "Example Street Vendor Location",
+            thumbnail: imgLapakin,
+            techStack: "React JS, Tailwindcss, leafletjs",
+            url: "https://lapakin.vercel.app/"
+        }
     ]
 }
