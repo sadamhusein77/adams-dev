@@ -52,6 +52,7 @@ import imgCert14 from '@/assets/images/img_cert_14.webp';
 import imgCert15 from '@/assets/images/img_cert_15.webp';
 import imgLiburi from '@/assets/images/img_liburi.png';
 import imgLapakin from '@/assets/images/img_lapakin.png';
+import imgPlacein from '@/assets/images/img_placein.png';
 
 export {
     IconWeb,
@@ -107,5 +108,6 @@ export {
     imgGGameHub,
     imgOneByOne,
     imgIPoker,
-    imgLapakin
+    imgLapakin,
+    imgPlacein
 }

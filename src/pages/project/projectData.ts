@@ -1,4 +1,4 @@
-import { imgFloflow, imgGGameHub, imgIPoker, imgIrello, imgLapakin, imgLiburi, imgLuxspace, imgNotes, imgOneByOne, imgWallyboard } from "@/assets";
+import { imgFloflow, imgGGameHub, imgIPoker, imgIrello, imgLapakin, imgLiburi, imgLuxspace, imgNotes, imgOneByOne, imgPlacein, imgWallyboard } from "@/assets";
 import type { IProject } from ".";
 
 export const SAMPLE_PROJECTS: IProject[] = [
@@ -37,7 +37,7 @@ export const SAMPLE_PROJECTS: IProject[] = [
     title: "Irello",
     description:
       "AI-powered task management and productivity application",
-    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript"],
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript", "GLM"],
     year: 2026,
     image: imgIrello,
     url: "https://irello.vercel.app/",
@@ -47,7 +47,7 @@ export const SAMPLE_PROJECTS: IProject[] = [
     title: "Wallyboard",
     description:
       "AI-powered white board",
-    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript"],
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript", "GLM"],
     year: 2026,
     image: imgWallyboard,
     url: "https://wally-board.vercel.app/",
@@ -57,7 +57,7 @@ export const SAMPLE_PROJECTS: IProject[] = [
     title: "FloFlow",
     description:
       "AI-powered simple cashflow management and report",
-    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript"],
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript", "GLM"],
     year: 2026,
     image: imgFloflow,
     url: "https://floflow.vercel.app/",
@@ -67,7 +67,7 @@ export const SAMPLE_PROJECTS: IProject[] = [
     title: "G-Game Hub",
     description:
       "AI-powered simple mini game",
-    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript"],
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript", "GLM"],
     year: 2026,
     image: imgGGameHub,
     url: "https://ggamehub.vercel.app/",
@@ -77,7 +77,7 @@ export const SAMPLE_PROJECTS: IProject[] = [
     title: "One by One Battle Combat",
     description:
       "AI-powered simple battle combat with inventory and crafting feature",
-    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript"],
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript", "GLM"],
     year: 2026,
     image: imgOneByOne,
     url: "https://onebyone-gilt.vercel.app/",
@@ -87,7 +87,7 @@ export const SAMPLE_PROJECTS: IProject[] = [
     title: "iPoker Remi 13",
     description:
       "AI-powered simple remi 13",
-    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript"],
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript", "GLM"],
     year: 2026,
     image: imgIPoker,
     url: "https://remi-cards13.vercel.app/",
@@ -97,9 +97,19 @@ export const SAMPLE_PROJECTS: IProject[] = [
     title: "Lapakin",
     description:
       "AI-powered vendor street location",
-    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript", "leaflet"],
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript", "leaflet", "GLM"],
     year: 2026,
     image: imgLapakin,
     url: "https://lapakin.vercel.app/",
+  },
+  {
+    id: 11,
+    title: "PlaceIn",
+    description:
+      "AI-powered ",
+    tags: ["AI", "React", "Vite", "Tailwindcss", "TypeScript", "leaflet", "GLM"],
+    year: 2026,
+    image: imgPlacein,
+    url: "https://placein.vercel.app/",
   }
 ];
